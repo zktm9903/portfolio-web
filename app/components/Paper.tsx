@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Variants, motion } from "framer-motion";
 
-const cardVariants: Variants = {
+const variants: Variants = {
   offscreen: {
     y: 200,
     opacity: 0,
@@ -21,19 +21,19 @@ export default function Paper() {
     <>
       <div className="w-full flex flex-col items-center justify-center px-[45px]">
         <motion.div initial="offscreen" whileInView="onscreen">
-          <motion.div variants={cardVariants}>
+          <motion.div variants={variants}>
             <p className="text-[22px] text-[#8B95A1]">학부 연구생 1년 반</p>
           </motion.div>
         </motion.div>
         <motion.div initial="offscreen" whileInView="onscreen">
-          <motion.div variants={cardVariants}>
+          <motion.div variants={variants}>
             <p className="text-[45px] text-white font-semibold text-center leading-[70px] mt-4">
               좋은 교수님을 만났습니다
             </p>
           </motion.div>
         </motion.div>
         <motion.div initial="offscreen" whileInView="onscreen">
-          <motion.div variants={cardVariants}>
+          <motion.div variants={variants}>
             <div className="flex justify-center items-center space-x-[70px] mt-[100px]">
               <Link
                 href={"https://www.mdpi.com/2079-9292/11/23/3868"}
@@ -41,7 +41,7 @@ export default function Paper() {
               >
                 <motion.div
                   className="w-[50px] h-[32.81px] cursor-pointer"
-                  whileHover={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <Image
@@ -51,7 +51,7 @@ export default function Paper() {
                     alt="mdpi"
                     width={50}
                     height={40}
-                    className="hover:opacity-50 cursor-pointer hover:scale-110"
+                    className="cursor-pointer hover:scale-110"
                   />
                 </motion.div>
               </Link>
@@ -79,7 +79,7 @@ export default function Paper() {
           </motion.div>
         </motion.div>
         <motion.div initial="offscreen" whileInView="onscreen">
-          <motion.div variants={cardVariants}>
+          <motion.div variants={variants}>
             <div className="relative mt-[50px]">
               <Image
                 src={"/paperPreview.jpg"}
@@ -95,49 +95,3 @@ export default function Paper() {
     </>
   );
 }
-
-// import "./styles.css";
-// import { motion, Variants } from "framer-motion";
-
-// interface Props {
-//   emoji: string;
-//   hueA: number;
-//   hueB: number;
-// }
-
-// const hue = (h: number) => `hsl(${h}, 100%, 50%)`;
-
-// function Card({ emoji, hueA, hueB }: Props) {
-//   const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
-
-//   return (
-//     <motion.div
-//       className="card-container"
-//       initial="offscreen"
-//       whileInView="onscreen"
-//       viewport={{ once: true, amount: 0.8 }}
-//     >
-//       <div className="splash" style={{ background }} />
-//       <motion.div className="card" variants={cardVariants}>
-//         {emoji}
-//       </motion.div>
-//     </motion.div>
-//   );
-// }
-
-// const food: [string, number, number][] = [
-//   ["🍅", 340, 10],
-//   ["🍊", 20, 40],
-//   ["🍋", 60, 90],
-//   ["🍐", 80, 120],
-//   ["🍏", 100, 140],
-//   ["🫐", 205, 245],
-//   ["🍆", 260, 290],
-//   ["🍇", 290, 320],
-// ];
-
-// export default function App() {
-//   return food.map(([emoji, hueA, hueB]) => (
-//     <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />
-//   ));
-// }
