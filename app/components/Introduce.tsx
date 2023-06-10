@@ -7,13 +7,14 @@ import { useState } from "react";
 export default function Introduce() {
   const { scrollY } = useScroll();
   const [arrow, setArrow] = useState(true);
-  const [order, setOrder] = useState("hello");
+  const [order, setOrder] = useState("hello1");
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (0 < latest && latest <= 2000) if (!arrow) setArrow(true);
     if (2000 < latest) if (arrow) setArrow(false);
     //prettier config 해야함
-    if (0 < latest && latest <= 3000) if (order !== "hello") setOrder("hello");
+    if (0 < latest && latest <= 3000)
+      if (order !== "hello1") setOrder("hello1");
     if (3000 < latest && latest <= 6000)
       if (order !== "hello2") setOrder("hello2");
     if (6000 < latest && latest <= 9000)
@@ -21,27 +22,23 @@ export default function Introduce() {
   });
 
   return (
-    <>
-      <div className="w-screen h-[9000px] mb-[60px] scroll-hidden">
-        <div className="w-full h-screen sticky top-0 relative flex justify-center ">
-          <AnimatePresence>{order === "hello" && <Hello />} </AnimatePresence>
-          <AnimatePresence>{order === "hello2" && <Hello2 />}</AnimatePresence>
-          <AnimatePresence>{order === "hello3" && <Hello3 />}</AnimatePresence>
-          <AnimatePresence>{arrow && <Arrow />}</AnimatePresence>
-          <iframe
-            src="https://giphy.com/embed/GuFALVnrfpNhm"
-            width="70%"
-            height="500"
-            className="absolute bottom-[50px] scale-[1.18] mt-[400px]"
-          />
-          <div className="absolute bottom-0 w-full h-screen z-[10]" />
-        </div>
-      </div>
-    </>
+    <div className="w-full h-screen sticky top-0 relative flex justify-center ">
+      <AnimatePresence>{order === "hello1" && <Hello1 />} </AnimatePresence>
+      <AnimatePresence>{order === "hello2" && <Hello2 />}</AnimatePresence>
+      <AnimatePresence>{order === "hello3" && <Hello3 />}</AnimatePresence>
+      <AnimatePresence>{arrow && <Arrow />}</AnimatePresence>
+      <iframe
+        src="https://giphy.com/embed/GuFALVnrfpNhm"
+        width="70%"
+        height="500"
+        className="absolute bottom-[50px] scale-[1.18] mt-[400px]"
+      />
+      <div className="absolute bottom-0 w-full h-screen z-[10]" />
+    </div>
   );
 }
 
-function Hello() {
+function Hello1() {
   return (
     <motion.div
       initial={{ opacity: 0, x: -50 }}
@@ -82,9 +79,10 @@ function Hello2() {
 function Hello3() {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 50 }}
+      transition={{ duration: 0.4 }}
       className="absolute top-[150px] z-[200] w-screen max-w-[600px] h-[100px] flex flex-col items-center justify-center space-y-[20px] text-white"
     >
       <p className="text-[45px] font-semibold text-center leading-[70px] mt-[100px]">

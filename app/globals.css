@@ -5,3 +5,9 @@
 body {
   background-color: black;
 }
+
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}

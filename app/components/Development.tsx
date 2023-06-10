@@ -66,7 +66,7 @@ export default function Development() {
         className="grid grid-cols-2 grid-rows-auto w-full gap-6 mt-[100px]"
       >
         {developList.map((el, idx) => (
-          <motion.div initial="offscreen" whileInView="onscreen">
+          <motion.div key={idx} initial="offscreen" whileInView="onscreen">
             <motion.div variants={idx % 2 === 0 ? variants : delayVariants}>
               <Link href={el.github}>
                 <div className="bg-zinc-900 w-full aspect-video rounded-[15px]">
