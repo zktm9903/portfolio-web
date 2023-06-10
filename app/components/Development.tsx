@@ -68,7 +68,7 @@ export default function Development() {
         {developList.map((el, idx) => (
           <motion.div key={idx} initial="offscreen" whileInView="onscreen">
             <motion.div variants={idx % 2 === 0 ? variants : delayVariants}>
-              <Link href={el.github}>
+              <Link href={el.github} target="_blank">
                 <div className="bg-zinc-900 w-full aspect-video rounded-[15px]">
                   <Image
                     src={el.img}
@@ -89,7 +89,7 @@ export default function Development() {
                   {el.title}
                 </p>
                 <div className="flex space-x-3">
-                  <Link href={el.github}>
+                  <Link href={el.github} target="_blank">
                     <motion.svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ export default function Development() {
                     </motion.svg>
                   </Link>
                   {el.link && (
-                    <Link href={el.link}>
+                    <Link href={el.link} target="_blank">
                       <motion.svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
