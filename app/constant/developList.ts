@@ -19,14 +19,14 @@ export const developList: Array<Develop> = [
     description: "아직 진행 중인 팀 프로젝트",
     github: "https://github.com/clean-area/front",
     link: "https://front-clean-area.vercel.app/",
-    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNZg8Z%2FbtsiOkf6b5q%2FwbizERPm6R6Yi2iUdbdxI1%2Fimg.png",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbOQdaQ%2FbtsjmCNz67Q%2FVRO7keISJjz2g7Snc0dOnk%2Fimg.png",
   },
   {
     title: "아이폰 클론",
     description: "재미로 진행중인 프로젝트",
     github: "https://github.com/zktm9903/iphone",
     link: "https://zktm9903.github.io/iphone/",
-    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdlrysL%2FbtsiNvI5rCU%2FrgSzuXdfO5OkketkxYeTk1%2Fimg.png",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEcKCr%2FbtsjnHgNbLT%2FcKAmP9MKmUK1TXkDS4KkOk%2Fimg.png",
   },
   {
     title: "마크다운 메모장",

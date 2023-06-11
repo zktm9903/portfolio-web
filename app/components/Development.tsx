@@ -79,8 +79,8 @@ export default function Development() {
                       width: "100%",
                       height: "100%",
                     }}
-                    width={600}
-                    height={600}
+                    width={2000}
+                    height={2000}
                   />
                 </div>
               </Link>
