@@ -33,6 +33,7 @@ export default function Introduce() {
         autoPlay
         loop
         muted
+        playsInline
       />
 
       <div className="absolute bottom-0 w-full h-screen z-[10]" />
