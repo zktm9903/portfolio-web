@@ -8,9 +8,9 @@
 
 - 코어 : React, Typescript, Next.js
 - 상태관리 : -
-- 스타일링 : tailwind
-- 패키지 매니저 : npm
-- 빌드 : webpack, swc
+- 스타일링 : Tailwind
+- 패키지 매니저 : NPM
+- 빌드 : Webpack, SWC
 - etc : react-framer-motion
 
 TODO
