@@ -53,7 +53,7 @@ export default function Development() {
       <motion.div initial="offscreen" whileInView="onscreen">
         <motion.p
           variants={variants}
-          className="text-[45px] text-white font-semibold text-center leading-[70px]"
+          className="text-7xl text-white font-semibold text-center leading-[70px]"
         >
           만들어본 것들
         </motion.p>
@@ -63,7 +63,7 @@ export default function Development() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="grid grid-cols-2 grid-rows-auto w-full gap-6 mt-[100px]"
+        className="grid grid-cols-1 lg:grid-cols-2 grid-rows-auto w-full gap-6 mt-[100px]"
       >
         {developList.map((el, idx) => (
           <motion.div key={idx} initial="offscreen" whileInView="onscreen">
@@ -84,10 +84,8 @@ export default function Development() {
                   />
                 </div>
               </Link>
-              <div className="flex justify-between items-center mt-3">
-                <p className="text-white text-[30px] font-semibold">
-                  {el.title}
-                </p>
+              <div className="flex justify-between items-center mt-5">
+                <p className="text-white text-5xl font-semibold">{el.title}</p>
                 <div className="flex space-x-3">
                   <Link href={el.github} target="_blank">
                     <motion.svg
@@ -128,7 +126,7 @@ export default function Development() {
                 </div>
               </div>
 
-              <p className="text-[#8B95A1] text-[23px] font-semibold mt-4">
+              <p className="text-[#8B95A1] text-4xl font-semibold mt-4 mb-7">
                 {el.description}
               </p>
             </motion.div>
