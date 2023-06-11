@@ -10,6 +10,7 @@ export default function Header() {
   useEffect(() => {
     window.history.scrollRestoration = "manual";
   }, []);
+
   return (
     <header className="w-screen h-[60px] bg-[rgba(0,0,0,0.8)] flex justify-center top-0 sticky z-10">
       <nav className="w-screen max-w-[1050px] mx-[45px] flex justify-between items-center">

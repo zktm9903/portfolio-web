@@ -49,9 +49,9 @@ function Hello1() {
       transition={{ duration: 0.4 }}
       className="absolute top-[150px] z-[200] w-screen max-w-[600px] h-[100px] flex flex-col items-center space-y-[20px] text-white"
     >
-      <p className="text-[22px] text-[#8B95A1]">학사 졸업 이후 최초</p>
-      <p className="text-[26px]">2023.03.01(수) -</p>
-      <p className="text-[55px] font-semibold text-center leading-[70px]">
+      <p className="text-4xl text-[#8B95A1]">학사 졸업 이후 최초</p>
+      <p className="text-5xl">2023.03.01(수) -</p>
+      <p className="text-7xl font-semibold text-center leading-[70px]">
         안녕하세요
         <br />웹 개발자 이상철입니다
       </p>
@@ -68,12 +68,12 @@ function Hello2() {
       transition={{ duration: 0.4 }}
       className="absolute top-[150px] z-[200] w-screen max-w-[600px] h-[100px] flex flex-col items-center space-y-[20px] text-white"
     >
-      <p className="text-[45px] font-semibold text-center leading-[70px]">
+      <p className="text-7xl font-semibold text-center leading-[70px]">
         포트폴리오를 <br />
         만들어봤습니다
       </p>
-      <p className="text-[26px]">6.4(일)-</p>
-      <p className="text-[22px] text-[#8B95A1]">토스증권 채용사이트 클론</p>
+      <p className="text-5xl">6.4(일)-</p>
+      <p className="text-4xl text-[#8B95A1]">토스증권 채용사이트 클론</p>
     </motion.div>
   );
 }
@@ -87,11 +87,10 @@ function Hello3() {
       transition={{ duration: 0.4 }}
       className="absolute top-[150px] z-[200] w-screen max-w-[600px] h-[100px] flex flex-col items-center justify-center space-y-[20px] text-white"
     >
-      <p className="text-[45px] font-semibold text-center leading-[70px] mt-[100px]">
+      <p className="text-7xl font-semibold text-center leading-[70px] mt-[100px]">
         아직 부족함이 많습니다
       </p>
-      <p className="text-[26px]"></p>
-      <p className="text-[22px] text-[#8B95A1]">
+      <p className="text-4xl text-[#8B95A1]">
         그래도 좋게 봐주시면 감사하겠습니다
       </p>
     </motion.div>

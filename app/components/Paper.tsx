@@ -22,12 +22,12 @@ export default function Paper() {
       <div className="w-full flex flex-col items-center justify-center px-[45px]">
         <motion.div initial="offscreen" whileInView="onscreen">
           <motion.div variants={variants}>
-            <p className="text-[22px] text-[#8B95A1]">학부 연구생 1년 반</p>
+            <p className="text-4xl text-[#8B95A1]">학부 연구생 1년 반</p>
           </motion.div>
         </motion.div>
         <motion.div initial="offscreen" whileInView="onscreen">
           <motion.div variants={variants}>
-            <p className="text-[45px] text-white font-semibold text-center leading-[70px] mt-4">
+            <p className="text-7xl text-white font-semibold text-center leading-[70px] mt-4">
               좋은 교수님을 만났습니다
             </p>
           </motion.div>
