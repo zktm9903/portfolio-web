@@ -27,12 +27,14 @@ export default function Introduce() {
       <AnimatePresence>{order === "hello2" && <Hello2 />}</AnimatePresence>
       <AnimatePresence>{order === "hello3" && <Hello3 />}</AnimatePresence>
       <AnimatePresence>{arrow && <Arrow />}</AnimatePresence>
-      <iframe
-        src="https://giphy.com/embed/GuFALVnrfpNhm"
-        width="70%"
-        height="500"
-        className="absolute bottom-[50px] scale-[1.18] mt-[400px]"
+      <video
+        src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-people-during-a-money-transaction-18247-large.mp4"
+        className="absolute bottom-0 w-full"
+        autoPlay
+        loop
+        muted
       />
+
       <div className="absolute bottom-0 w-full h-screen z-[10]" />
     </div>
   );
