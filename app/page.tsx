@@ -17,7 +17,7 @@ export default function Home() {
         <Paper />
       </section>
       <section
-        className="w-screen max-w-[1050px] mx-[45px] flex justify-between items-center py-[200px]"
+        className="w-screen max-w-[1050px] mx-[45px] flex justify-between items-center py-[200px] overflow-x-hidden"
         id={"dev"}
       >
         <Development />
