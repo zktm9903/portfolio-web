@@ -28,7 +28,7 @@ export default function Introduce() {
       <AnimatePresence>{order === "hello3" && <Hello3 />}</AnimatePresence>
       <AnimatePresence>{arrow && <Arrow />}</AnimatePresence>
       <video
-        src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-people-during-a-money-transaction-18247-large.mp4"
+        src="https://assets.mixkit.co/videos/30563/30563-720.mp4"
         className="absolute bottom-0 w-full"
         autoPlay
         loop
@@ -74,7 +74,6 @@ function Hello2() {
         만들어봤습니다
       </p>
       <p className="text-5xl">6.4(일)-</p>
-      <p className="text-4xl text-[#8B95A1]">토스증권 채용사이트 클론</p>
     </motion.div>
   );
 }

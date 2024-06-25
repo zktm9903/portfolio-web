@@ -24,7 +24,7 @@ export default function Footer() {
           title={"Copyright ⓒ LeeSang Securities. All Rights Reserved"}
           list={[
             { name: "대표 : 이상철" },
-            { name: "대한민국 경기도 성남시 어딘가" },
+            { name: "대한민국 경기도 용인시 어딘가" },
           ]}
         />
       </div>
